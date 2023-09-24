@@ -1,6 +1,8 @@
-import { NavLink } from "react-router-dom";
+import { NavLink ,Outlet} from "react-router-dom";
 
 import QuizCard from "./QuizCard";
+// import QuizList from "./QuizList";
+// import QuizInstruction from "./QuizInstruction";
 
 const Home = () => {
   const quizCard = [
@@ -37,7 +39,7 @@ const Home = () => {
   ];
   return (
     <div className="container">
-      {quizCard.map(({ title, description, text },index) => (
+      {quizCard.map(({ title, description, text }, index) => (
         <QuizCard
           title={title}
           description={description}
@@ -47,6 +49,9 @@ const Home = () => {
       ))}
       <NavLink to="/htmlQuiz">Html Quiz</NavLink>
       <NavLink to="/cssQuiz">Css Quiz</NavLink>
+      <Outlet/>
+      {/* <QuizList/> */}
+      {/* <QuizInstruction/> */}
     </div>
   );
 };
