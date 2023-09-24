@@ -38,7 +38,7 @@ const Home = () => {
     },
   ];
   return (
-    <div className="container">
+    <div className="quiz-cards-container">
       {quizCard.map(({ title, description, text }, index) => (
         <QuizCard
           title={title}

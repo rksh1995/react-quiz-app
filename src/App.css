@@ -1,11 +1,23 @@
+/* Navbar.css */
+
 .Home {
-    display: flex;
-    gap: 15px;
-    justify-content: center;
-    font-size: 20px;
-    background-color: #cccfce;
-    color: white;
-  }
+  display: flex;
+  justify-content: space-around;
+  background-color: #333;
+  padding: 10px;
+}
+
+.Home a {
+  color: white;
+  text-decoration: none;
+  padding: 5px 10px;
+}
+
+.Home a:hover {
+  background-color: #555;
+  border-radius: 5px;
+}
+
   
   /* Login.css */
   .form-container {
@@ -98,18 +110,8 @@
       font-family: sans-serif;
     }
   
-  
-  .Quiz-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-width: 300px;
-    flex-direction: column;
-  
-    padding: 40px;
-    background-color: bisque;
-  }
-  .container {
+   /* quiz card parent div css */
+  .quiz-cards-container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -117,20 +119,43 @@
     gap: 10px;
     margin-top: 50px;
   }
-  .quiz-btn {
-    background-color: #04aa6d;
-    padding: 10px 60px;
-    font-size: 17px;
-    font-family: sans-serif;
-    border-radius: 20px;
-    border: 1px solid white;
-    text-decoration: none;
-    color: white;
-  }
-  .quiz-heading {
-    font-size: 30px;
-  }
-  .quiz-para {
-    padding: 10px;
-  }
+
   
+
+
+  /* QuizCard.css */
+
+.Quiz-container {
+  border: 1px solid #ccc;
+  padding: 50px;
+  margin: 10px;
+  text-align: center;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.quiz-heading {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.quiz-para {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.quiz-btn {
+  background-color: #04aa6d;;
+  color: #fff;
+  padding: 10px 60px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.quiz-btn:hover {
+  background-color: #0056b3;
+}
