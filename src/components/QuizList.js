@@ -1,10 +1,11 @@
 
-// import { useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 
-    // const navigate = useNavigate();
+  
 
     const QuizList = () => {
+      const navigate = useNavigate();
         const containerStyle = {
           textAlign: 'center',
           padding: '20px',
@@ -51,8 +52,11 @@
               <li style={listItemStyle}>PHP Quiz</li>
               <li style={listItemStyle}>PYTHON Quiz</li>
             </ul>
-            <button style={buttonStyle}>Prev</button>
-            <button style={buttonStyle}>Next</button>
+         
+            <button style={buttonStyle} onClick={() => navigate("/quizInstructions")}>Prev</button>
+
+
+            <button style={buttonStyle} onClick={() => navigate("/htmlQuizQuestions")}>Next</button>
           </div>
         );
       };

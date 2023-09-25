@@ -10,6 +10,7 @@ const QuizCard = ({ title, description, text }) => {
       <h1 className="quiz-heading">{title}</h1>
       <p className="quiz-para">{description}</p>
       <button className="quiz-btn" onClick={() => navigate("/quizInstructions")}>
+     
         {text}
       </button>
     </div>

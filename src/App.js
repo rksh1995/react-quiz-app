@@ -8,6 +8,7 @@ import HtmlQuiz from "./components/HtmlQuiz";
 import CssQuiz from "./components/CssQuiz";
 import QuizInstruction from "./components/QuizInstruction";
 import QuizList from "./components/QuizList";
+import HtmlQuizQuestions from "./components/HtmlQuizQuestions";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         <Route path="/signup" element={<Signup />} />
         <Route path="/quizInstructions" element={<QuizInstruction/>} />
         <Route path="/quizList" element={<QuizList/>} />
+        <Route path="/htmlQuizQuestions" element={<HtmlQuizQuestions/>} />
       </Routes>
     </div>
   );
